@@ -10,3 +10,7 @@
 @baseUrl = {{host}}/api/
 
 GET {{baseUrl}}
+###
+
+GET {{baseUrl}}/demons
+
