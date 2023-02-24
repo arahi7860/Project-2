@@ -1,4 +1,4 @@
-import Demons from "./demon-model.js";
+import Demons from "../models/demon-model.js";
 // Defining a route to get all the demons
 export const demonIndex = async (request, response) => {
   try {

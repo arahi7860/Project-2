@@ -8,7 +8,7 @@ import {
   showDemon,
   updateDemon,
   deleteDemon,
-} from "./demon-controller.js";
+} from "../controller/demon-controller.js";
 
 demonRouter.get("/", (req, res) => {
   res.json("One Piece is not peak fiction!");

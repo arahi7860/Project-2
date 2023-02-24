@@ -1,7 +1,7 @@
 // eslint-disable-all-lines
 import express from "express";
 import mongoose from "mongoose";
-import demonRouter from "../demon-router.js";
+import demonRouter from "../router/demon-router.js";
 import lifecycle from "./middleware/lifecycle.js";
 // import "../seed.js";
 
