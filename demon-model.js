@@ -1,4 +1,4 @@
-import mongoose from './connection.js'
+import mongoose from "./connection.js";
 
 // const demonSchema = new mongoose.Schema({
 //   name: String,
@@ -17,19 +17,22 @@ import mongoose from './connection.js'
 // })
 
 const demonSchema = new mongoose.Schema({
-  demon: {
-    inherits: String,
-    lvl: Number,
-    race: String,
-    resists: {
+  name: String,
+  inherits: String,
+  lvl: Number,
+  race: String,
+  resists: [
+    {
       type: String,
     },
-    skills: {
+  ],
+  skills: [
+    {
       type: Map,
       of: { type: Number },
     },
-    stats: [Number],
-  },
-})
+  ],
+  stats: [Number],
+});
 
-export default mongoose.model('Demons', demonSchema)
+export default mongoose.model("Demons", demonSchema);

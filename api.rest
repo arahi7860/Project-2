@@ -13,4 +13,87 @@ GET {{baseUrl}}
 ###
 
 GET {{baseUrl}}/demons
+###
+
+@name createDemon
+POST {{baseUrl}}/demons
+{
+    "name": "Demiurge",
+    "inherits": "electric",
+    "lvl": 95,
+    "race": "Vile",
+    "resists": "--ssssnn",
+    "skills": {
+      "Antichthon": 0,
+      "Debilitate": 0,
+      "Judgement Light": 96,
+      "Null Mind": 97,
+      "Thunder Reign": 0
+    },
+    "stats": [101, 101, 101, 101, 101],
+    "__v": 0
+}
+###
+
+@name createDemon 
+POST {{baseUrl}}/demons
+{
+    "name": "Lucifuge",
+    "inherits": "light",
+    "lvl": 92,
+    "race": "Tyrant",
+    "resists": "-r--wr-n",
+    "skills": {
+      "Concentrate": 94,
+      "Hellish Mask": 93,
+      "Luster Candy": 0,
+      "Makarakarn": 0,
+      "Mana Surge": 95,
+      "Workaholic": 0
+    },
+    "stats": [84, 94, 122, 79, 113],
+    "__v": 0
+}
+###
+@name createDemon 
+POST {{baseUrl}}/demons
+{
+    "name": "Bully Macguire",
+    "inherits": "dark",
+    "lvl": 99,
+    "race": "Menace",
+    "resists": "rr--wrwn",
+    "skills": {
+      "Concentrate": 94,
+      "Hellish Mask": 93,
+      "Get Religion": 0,
+      "My Back": 99,
+      "Open Damn Door": 0,
+      "Mana Surge": 95,
+      "Workaholic": 0
+    },
+    "stats": [122, 99, 122, 79, 130],
+    "__v": 0
+}
+###
+
+GET {{baseUrl}}/demons/Yoshitsune
+###
+
+GET {{baseUrl}}/demons/Helel
+###
+
+GET {{baseUrl}}/demons/Daisoujou
+###
+
+GET {{baseUrl}}/demons/Lucifuge
+###
+
+PUT {{baseUrl}}/demons/Bully%20Macguire
+{
+    "name": "Tobey Macguire"
+}
+###
+
+DELETE {{baseUrl}}/demons/Tobey%20Macguire
 
