@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.set("strictQuery", false);
-mongoose.connect("mongodb://localhost/protodatabase");
+mongoose.set("strictQuery", true);
+mongoose.connect(process.env.DATABASE_URL);
 
 export default mongoose;

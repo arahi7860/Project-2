@@ -1,3 +1,4 @@
+import "dotenv/config";
 import Demons from "./demon-model.js";
 import mongoose from "./connection.js";
 import demonData from "./demon-data.json" assert { type: "json" };
