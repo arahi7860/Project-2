@@ -4,6 +4,8 @@ import mongoose from "./db/connection.js";
 import demonData from "./demon-data.json" assert { type: "json" };
 // import compData from './comp-config.json' assert { type: "json" }
 
+// Creating an array to destructure the object from my demonData.json
+// Destructuring the name of the demon into its own data
 const demons = [];
 for (const name in demonData) {
   const data = demonData[name];
