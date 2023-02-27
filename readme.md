@@ -40,7 +40,7 @@
 - **MVP**: Just implement the CRUD onto my Project 2. I want to make sure it's being deployed correctly, and all the data sets appear on Vercel as well as have my database appear on MONGODB Atlas.
 - **Post-MVP**: I would like to add images onto each demon, in order to see what each demon looks like in the game. I would also like to implement a team builder which can allow you to decide what demons you want for your party. Afterwards, I hope to implement a fusion tool for the demons
 - **Goals**: Implement all the necessary routers, controllers, models as well as the index.js file and seed file. I needed to also do npm i dotenv. Add the import "dotenv/config" in my seed.js file. Add a vercel.json to your file that routes to your api destination.
-- **Major Hurdles**: Being able to see the database on MONGODB Compass. I had to destructure my json to make each information available when I ran my seed file, so it can be shown on my databases. Vercel was difficult to learn and I had trouble deploying my project onto Vercel without adding certain adjustments to my file such as having mongoose being imported on certain files.
+- **Major Hurdles**: Being able to see the database on MONGODB Compass. I had to destructure my json to make each information available when I ran my seed file, so it can be shown on my databases. Vercel was difficult to learn and I had trouble deploying my project onto Vercel without adding certain adjustments to my file such as having mongoose being imported on certain files. It took some time to understand what was needed to be imported and what needed to be added onto my Project.
 - **Data Model**: e.g. Get this from Excalidraw
   ![data-model]()
 - **Screenshot**: Here is a screenshot of the API database that is shown on Vercel.
