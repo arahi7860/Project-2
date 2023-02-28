@@ -44,4 +44,3 @@
 - **Data Model**: e.g. Get this from Excalidraw
   ![model](https://user-images.githubusercontent.com/54910341/221755440-92272013-e862-4bde-9e8a-0629c5d1f3a9.png)
 - **Screenshot**: Here is a screenshot of the API database that is shown on Vercel.
-  <img width="1728" alt="Screen Shot 2023-02-26 at 12 00 54 AM" src="https://user-images.githubusercontent.com/54910341/221755808-3806c4eb-caa3-461a-8975-067268d36d28.png">
