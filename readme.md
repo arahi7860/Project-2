@@ -37,7 +37,7 @@
 },
 ```
 
--**CRUD**: 
+- **CRUD**: 
 
 | Route  |  HTTP Method | DB Action  | Description  |
 |---|---|---|---|
