@@ -42,5 +42,6 @@
 - **Goals**: Implement all the necessary routers, controllers, models as well as the index.js file and seed file. I needed to also do npm i dotenv. Add the import "dotenv/config" in my seed.js file. Add a vercel.json to your file that routes to your api destination.
 - **Major Hurdles**: Being able to see the database on MONGODB Compass. I had to destructure my json to make each information available when I ran my seed file, so it can be shown on my databases. The routers were giving me trouble when trying to post new data onto my database on REST Client, so I switched to Postman and I had a smoother experience using it to check all my routers. Vercel was difficult to learn and I had trouble deploying my project onto Vercel without adding certain adjustments to my file such as having mongoose being imported on certain files. It took some time to understand what was needed to be imported and what needed to be added onto my Project.
 - **Data Model**: e.g. Get this from Excalidraw
-  ![data-model]()
+  ![model](https://user-images.githubusercontent.com/54910341/221755440-92272013-e862-4bde-9e8a-0629c5d1f3a9.png)
 - **Screenshot**: Here is a screenshot of the API database that is shown on Vercel.
+  <img width="1728" alt="Screen Shot 2023-02-26 at 12 00 54 AM" src="https://user-images.githubusercontent.com/54910341/221755808-3806c4eb-caa3-461a-8975-067268d36d28.png">
