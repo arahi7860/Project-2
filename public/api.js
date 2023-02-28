@@ -5,7 +5,7 @@ const getDemons = async () => {
   const json = await result.json();
   console.log(json);
 
-  return json[0];
+  return json;
 };
 
 const displayDemons = async () => {
@@ -13,8 +13,12 @@ const displayDemons = async () => {
   const demons = await getDemons();
   let filteredDemons = demons;
 
+  const form = document.querySelector(".form");
+  const button = document.querySelector("#search");
   const searchInput = document.querySelector("#searchInput");
-  searchInput.addEventListener("input", () => {
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
     const searchTerm = searchInput.value.toLowerCase();
     filteredDemons = demons.filter((demon) =>
       demon.name.toLowerCase().includes(searchTerm)
@@ -22,16 +26,42 @@ const displayDemons = async () => {
     displayFilteredDemons();
   });
 
+  button.addEventListener("click", async () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    filteredDemons = demons.filter((demon) =>
+      demon.name.toLowerCase().includes(searchTerm)
+    );
+    displayFilteredDemons();
+  });
+
+  // searchInput.addEventListener("input", () => {
+  //   const searchTerm = searchInput.value.toLowerCase();
+  //   filteredDemons = demons.filter((demon) =>
+  //     demon.name.toLowerCase().includes(searchTerm)
+  //   );
+  //   displayFilteredDemons();
+  // });
+
   const displayFilteredDemons = async () => {
     demonList.innerHTML = "";
-    filteredDemons.forEach((demon) => {
+    if (filteredDemons.length > 0) {
+      filteredDemons.for;
+      const demon = filteredDemons[0];
       const li = document.createElement("li");
-      li.textContent = demon.name;
-      demonList.append(li);
-    });
-  };
+      const name = document.createElement("h3");
+      const level = document.createElement("p");
+      const race = document.createElement("p");
 
-  displayFilteredDemons();
+      name.textContent = demon.name;
+      level.textContent = `Level: ${demon.lvl}`;
+      race.textContent = `Race: ${demon.race}`;
+
+      li.append(name, level, race);
+      demonList.append(li);
+    } else {
+      demonList.textContent = "No demons found";
+    }
+  };
 };
 
 displayDemons();
