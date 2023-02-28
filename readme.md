@@ -1,8 +1,8 @@
-## Project 2: Persona Compendium API
+## Project 2: Persona 4 Compendium API
 
 - **App Title**: Demon Collection.
 - **App Description**: Goes through the data of my favorite game on Steam which is Persona 4 Golden. I created an API that goes through every demon from the game that includes their name, level, skills, stats, and race. I was inspired by the Pokemon API and I realized I can do one on Persona instead.
-- **API**: The information I used came from a JSON file from the github user https://github.com/aqiu384. I used his demon-data.json file from his Project the Megaten-Fusion-Tool.
+- **API**: The information I used came from a JSON file from the github user https://github.com/aqiu384. I used his demon-data.json file from his Project the Megaten-Fusion-Tool to get my game data.
 - **API Snippet**:
 
 ```
