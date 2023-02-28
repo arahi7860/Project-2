@@ -37,6 +37,17 @@
 },
 ```
 
+-**CRUD**: 
+
+| Route  |  HTTP Method | DB Action  | Description  |
+|---|---|---|---|
+| /api/demons  | GET  | INDEX  | Indexes all the demons |
+| /api/demons  | POST | CREATE  | Create a list of demons |
+| /api/demons/:name  | GET  | SHOW  | Show a single demon |
+| /api/demons/:name | PUT  | UPDATE  | Update a demon from your list  |
+| /api/demons/:name  | DELETE  | DELETE  | Delete a demon off your list |
+
+
 - **MVP**: Just implement the CRUD onto my Project 2. I want to make sure it's being deployed correctly, and all the data sets appear on Vercel as well as have my database appear on MONGODB Atlas.
 - **Post-MVP**: I would like to add images onto each demon, in order to see what each demon looks like in the game. I would also like to implement a team builder which can allow you to decide what demons you want for your party. Afterwards, I hope to implement a fusion tool for the demons
 - **Goals**: Implement all the necessary routers, controllers, models as well as the index.js file and seed file. I needed to also do npm i dotenv. Add the import "dotenv/config" in my seed.js file. Add a vercel.json to your file that routes to your api destination.
